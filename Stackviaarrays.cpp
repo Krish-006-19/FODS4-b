@@ -2,9 +2,9 @@
 using namespace std;
 
 class Stack {
-    int* arr;     // array to store elements
-    int top;      // index of top element
-    int capacity; // maximum size
+    int* arr;     
+    int top;      
+    int capacity; 
 
 public:
     Stack(int size) {
@@ -69,16 +69,16 @@ int main() {
     s.push(10);
     s.push(20);
     s.push(30);
-    s.display();  // [10,20,30]
+    s.display();  
 
-    cout << "Top element (peek): " << s.peek() << endl; // 30
-    cout << "Popped: " << s.pop() << endl;             // removes 30
-    s.display(); // [10,20]
+    cout << "Top element (peek): " << s.peek() << endl; 
+    cout << "Popped: " << s.pop() << endl;            
+    s.display();
 
     s.push(40);
     s.push(50);
-    s.push(60); // stack full
-    s.display(); // [10,20,40,50,60]
+    s.push(60);
+    s.display(); 
 
     return 0;
 }
